@@ -1,0 +1,19 @@
+body {
+	background-color: #eaecee;
+}
+
+.image-half-size {
+	border: 2px solid #d1d1d1;
+	border-radius: 8px;
+	background-color: #fff;
+	width: 100%;
+}
+
+.top-logo {
+	height: 34px;
+	padding-right: 20px;
+}
+
+.half-image-block {
+	padding-bottom: 24px;
+}

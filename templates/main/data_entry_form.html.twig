@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Data Entry Form{% endblock %}
+
+{% block stylesheets %}
+ <link rel="stylesheet" type="text/css" href="{{ asset('css/data_entry_form.css') }}" />
+{% endblock %}
+
+{% block javascripts %}
+<script src="js/data_entry_form.js"></script>
+{% endblock %}
+
+{% block heading %}Data Entry Form{% endblock %}
+
+{% block mainContent %}
+			<form>
+
+				<div class="row label-row" >
+					<div class="col-md-12">
+						<label for="ipt-first-name">First Name(s):</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" name="ipt-first-name" id="ipt-first-name">
+					</div>
+				</div>
+
+
+				<div class="row label-row">
+					<div class="col-md-12">
+						<label for="ipt-last-name">Last Name:</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" name="ipt-last-name" id="ipt-last-name">
+					</div>
+				</div>
+
+				<div class="row label-row">
+					<div class="col-md-12">
+						<label for="date1">Date of Birth:</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<input type="text" name="date1" id="date1">
+					</div>
+				</div>
+
+
+				<div class="row label-row">
+					<div class="col-md-12">
+						<label for="ta-address">Address:</label>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-12">
+						<textarea name="ta-address" id="ta-address">
+						</textarea>
+					</div>
+				</div>
+
+				
+				<br>
+				<!-- <div id="testSlider"></div> -->
+
+				<div>
+					<button id="btn-show-dialog1">Show Dialog</button>
+				</div>
+
+			</form>
+		</div>
+
+	</body>
+	<div id="dialog1"></div>
+	
+{% endblock %}
